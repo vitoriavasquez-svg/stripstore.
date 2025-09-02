@@ -1,1 +1,1 @@
-# stripstore.
+# stripstore
