@@ -1,48 +1,52 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=TASA+Explorer:wght@400..800&display=swap');
 
 :root{
-    --roxoclaro: #BB99CD;
-    --roxoescuro: #2E073F;
-    --roxomaisoumenos: #AD49E1;
-    --roxolindo: #7A1CAC;
-    --branco: #F5F5F0;
+--preto: #000000;
+--roxo--claro: #c77dff;
+--roxo: #7b2cbf;
+--roxo--escuro: #3c096c;
+--roxao: #240046;
+--branco: #ffffffff;
+--texto: "TASA Explorer", sans-serif;
+--titulo: "Archivo Black", sans-serif;
+
 }
 
 body{
-    background-color: var(--roxoescuro);
+    background-color: var(--roxo);
     font-family: var(--texto);
     margin: 0;
 }
 
 header{
-    background-color: var(--roxoclaro);
+    background-color: var(--roxo--escuro);
     display: flex;
     justify-content: space-around;
     padding: 10px;
     align-items: center;
-    
 }
 
 .img-logo{
-    width: 10%;
-    border-radius: 100%;
+    width: 20%;
+    border-radius: 5%;
 }
 
 .menu{
     display: flex;
     list-style: none;
     gap: 30px;
+    font-size: 20px;
     font-family: var(--titulo);
     text-transform: uppercase;
 }
 
 .menu a{
     text-decoration: none;
-    color: var(--roxolindo);
+    color: var(--roxo);
 }
 
 .menu a:hover{
-    color: var(--roxoescuro);
+    color: var(--preto);
     transition: 0.5s;
 }
 
@@ -55,26 +59,26 @@ header{
     overflow: hidden;
 }
 
- .capa.img{
+.capa img{
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
- }
+}
 
- .apresentacao{
+.apresentacao{
     font-family: var(--titulo);
     text-align: center;
-    margin: 40px 0;
- }
+    margin: 30px 0;
+}
 
 .apresentacao h2{
-    color: var(--roxolindo);
+    color: var(--roxao);
     font-size: 50px;
 }
 
 .apresentacao p{
-    color: var(--roxoescuro);
+    color: var(--roxo);
     font-size: 25px;
     font-family: var(--texto);
 }
@@ -83,39 +87,98 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 40px 0;
     gap: 5px;
 }
 
 .sobre div{
-    width: 50%;
+    width: 40%;
     text-align: center;
 }
 
 .sobre-img img{
     width: 50%;
     border-radius: 0px 20px 0 20px;
-    box-shadow: 3px 3px 10px #130f21;
+    box-shadow: 3px 3px 10px #240046;
 }
 
 .sobre h2{
-    font-family: var(titulo);
+    font-family: var(--titulo);
     font-size: 40px;
-    color: var(--roxolindo);
+    color: var(--roxao);
     margin-bottom: 15px;
 }
 
 .sobre p{
     font-size: 24px;
-    color: var(--roxoescuro);
+    color: var(--roxo--escuro);
 }
 
 footer{
-    background-color: var(--roxomaisoumenos);
+    background-color: var(--roxao);
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--azul-xford);
-    font-size: 18px;
+    color: var(--roxo);
+    font-size: 20px;
 }
+
+    /* Produtos */
+
+    .produtos{
+        padding: 40px 0;
+        text-align: center;
+    }
+    
+    .produtos h2{
+        font-family: var(--titulo);
+        font-size: 40px;
+        color: var(--roxao);
+        margin: 40px 0;
+    }
+    
+    .lista-produtos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .produto{
+        background-color: var(--roxo--claro);
+        width: 27%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .produto img{
+        width: 100%;
+        border-radius: 10px;
+    } 
+    .produto h3{
+        font-family: var(--titulo);
+        color: var(--roxo--escuro);
+        font-size: 24px;
+    }
+
+    .produto p{
+        font-family: var(--texto);
+        color: var(--preto);
+        font-size: 18px;
+        font-style: normal;
+    }
+    .produto button{
+        padding: 10px 24px;
+        font-size: 16px;
+        font-family: var(--titulo);
+        background-color: var(--roxo);
+        color: var(--branco);
+        border: none;
+        border-radius: 12px;
+    }
+    .produto button:hover{
+        background-color: var(--preto);
+        transition: 0.3s;
+        cursor: pointer;
+    }
